@@ -1,0 +1,34 @@
+ {% extends "base.html" %}
+ {% load static %}
+ 
+ {% block content %}
+
+<!-- start #header -->
+{% include "content/header.html" %}
+<!-- #header -->
+		  	  
+<!-- start banner Area -->
+{% include "Services/services_landing.html" %}
+<!-- End banner Area -->	
+
+<!-- Start services Area -->
+ {% include "Home_page/home_services.html" %}
+<!-- End services Area -->				
+
+<!-- Start fact Area -->
+ {% include "Home_page/home_counter.html" %}
+<!-- end fact Area -->				
+
+<!-- Start price Area -->
+ {% include "Home_page/home_pricing.html" %}
+<!-- End price Area -->			
+
+<!-- Start testimonial Area -->
+{% include "Home_page/home_testimonial.html" %}
+<!-- End testimonial Area -->			
+
+<!-- start footer Area -->
+{% include "content/footer.html" %}
+<!-- End footer Area -->		
+			
+{% endblock %}

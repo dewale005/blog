@@ -1,0 +1,65 @@
+{% load static %}
+<header id="header">
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="/">
+                    <img src={% static "img/logo.png" %} alt="" title="" />
+                </a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="{% url 'Home' %}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'About' %}">About</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'Services' %}">Services</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'Portfolio' %}">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'Pricing' %}">Pricing</a>
+                    </li>
+                    <li class="menu-has-children">
+                        <a href="{% url 'Blog' %}">Blog</a>
+                        <!-- <ul>
+                            <li>
+                                <a href="{% url 'Blog' %}">Blog Home</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'Home' %}">Blog Single</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <!-- <li class="menu-has-children">
+                        <a href="">Pages</a>
+                        <ul>
+                            <li>
+                                <a href="elements.html">Elements</a>
+                            </li>
+                            <li class="menu-has-children">
+                                <a href="">Level 2 </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Item One</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Item Two</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <li>
+                        <a href="{% url "Contact" %}">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- #nav-menu-container -->
+        </div>
+    </div>
+</header>

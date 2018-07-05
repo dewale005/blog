@@ -1,0 +1,36 @@
+ {% extends "base.html" %}
+ {% load static %} 
+ 
+ 
+ {% block content %}
+
+<!-- start #header -->
+{% include "content/header.html" %}
+<!-- #header -->
+		  	  
+<!-- start banner Area -->
+<section class="about-banner">
+<div class="container">				
+	<div class="row d-flex align-items-center justify-content-center">
+		<div class="about-content col-lg-12">
+			<h1 class="text-white">Portfolio</h1>	
+			<p class="text-white link-nav">
+				<a href="{% url 'Home' %}">Home </a>  
+				<span class="lnr lnr-arrow-right"></span>  
+				<a href="{% url 'Portfolio' %}"> Portfolio</a>
+			</p>
+		</div>	
+	</div>
+</div>
+</section>
+<!-- End banner Area -->	
+			
+<!-- Start portfolio-area Area -->
+{% include "Home_page/home_portfolio.html" %}
+<!-- End portfolio-area Area -->	
+
+<!-- start footer Area -->
+{% include "content/footer.html" %}
+<!-- End footer Area -->
+
+{% endblock %}

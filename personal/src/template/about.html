@@ -1,0 +1,35 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block content %}	
+
+<!-- start #header -->
+{% include "content/header.html" %}
+<!-- #header -->
+			  
+<!-- start banner Area -->
+<!-- {% include "blog/blog_landing.html" %} -->
+<!-- End banner Area -->	
+
+<!-- Start home-about Area -->
+{% include "About_page/about_main.html" %}
+<!-- End home-about Area -->	
+
+<!-- Start timeline Area -->				
+{% include "About_page/about_timeline.html" %}
+<!-- End timeline Area -->
+
+
+<!-- Start testimonial Area -->
+{% include "Home_page/home_testimonial.html" %}
+<!-- End testimonial Area -->			
+
+<!-- Start brands Area -->
+{% include "Home_page/home_brand.html" %}
+<!-- End brands Area -->
+
+<!-- start footer Area -->
+{% include "content/footer.html" %}
+<!-- End footer Area -->
+
+{% endblock %}

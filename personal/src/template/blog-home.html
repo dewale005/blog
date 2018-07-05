@@ -1,0 +1,23 @@
+ {% extends "base.html" %} 
+ {% load static %} 
+ 
+ {% block content %}
+
+<!-- start #header -->
+{% include "content/header.html" %}
+<!-- #header -->
+<!-- start banner Area -->
+<!-- End banner Area -->				  
+
+<!-- Start top-category-widget Area -->
+{% include "blog/top-category-widget.html" %}
+<!-- End top-category-widget Area -->
+
+<!-- Start post-content Area -->
+{% include "blog/post-content.html" %}
+<!-- End post-content Area -->
+			
+<!-- start footer Area -->
+{% include "content/footer.html" %}
+<!-- End footer Area -->
+{% endblock %}
