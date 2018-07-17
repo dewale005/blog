@@ -20,7 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from .views import home_page, about_page, services_page, portfolio_page, pricing_page, contact_page
-from blog.views import PostListView, PostDetailSlugView
+from blog.views import PostListView, PostDetailSlugView, comment
 
 urlpatterns = [
     url(r'^$', home_page, name='Home'),
@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^portfolio/$', portfolio_page, name='Portfolio'),
     url(r'^pricing/$', pricing_page, name='Pricing'),
     url(r'^blog/$', PostListView.as_view(), name='Blog'),
+    url(r'^Comment/$', comment, name='Comment'),
     url(r'^blog/(?P<slug>[\w-]+)/$', PostDetailSlugView.as_view(), name='post-detail'),
     url(r'^contact/$', contact_page, name='Contact'),
     url(r'^admin/', admin.site.urls),

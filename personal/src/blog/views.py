@@ -5,8 +5,10 @@ from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.utils import timezone
-from .models import Post
+from .models import Post, Comment
 
+def comment(request):
+    return render(request, "blog/post_detail.html", {})
 
 class PostListView(ListView):
     queryset = Post.objects.all()
